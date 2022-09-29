@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Saludo</h3>
+    {% if user.is_authenticated %}
+        <p> Hola <b>  {{ user.username }}</b> desde Django  </p>
+    {% else %}
+        <p> Hola mundo desde Django  </p>
+    {% endif %}
+{% endblock content %}
+
